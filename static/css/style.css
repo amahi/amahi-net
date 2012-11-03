@@ -1,0 +1,163 @@
+/*-----------------------------
+-----------style.css-----------
+---------for Amahi.net---------
+-------------------------------
+---by Al Jachimiak @M3nt_al ---
+------------------------------*/
+
+/*------------------------------------------------------
+-- Lowering the Content area to accomodate larger Logo
+------------------------------------------------------*/
+
+
+
+
+/*------------------------------------------------------
+-- Navbar
+------------------------------------------------------*/
+@media (max-width: 979px){
+	.navbar-fixed-top {
+	    margin-bottom: 0px;
+	}
+}
+
+
+
+/*------------------------------------------------------
+-- Content
+------------------------------------------------------*/
+#site-title{
+    margin-top: 30px;
+}
+
+
+.bg {
+    background-image: url('large-background.png');
+    background-repeat: no-repeat;
+    background-position:center top; 
+}
+
+@media (max-width: 767px) { 
+	.bg {
+	    background-image:none;
+	}
+	.logo{
+	    margin-left: 20px;
+	}
+
+}
+
+.lowered {
+    padding-top: 20px;
+}
+
+
+.hero-unit {
+  padding: 10px 30px 30px 30px;
+  margin-bottom: 30px;
+  background-color: #fcfcfc;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1), 0 -1px 10px rgba(0, 0, 0, 0.1);
+     -moz-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1), 0 -1px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1), 0 -1px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e3e3e3;
+}
+
+
+/*------------------------------------------------------
+-- Sidebar
+------------------------------------------------------*/
+.well {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #fcfcfc;
+  border: 1px solid #e3e3e3;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1), 0 -1px 10px rgba(0, 0, 0, 0.1);
+     -moz-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1), 0 -1px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1), 0 -1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-nav{
+    padding-top: 60px
+
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 30px;
+    color: inherit;
+}
+
+.active{
+    color: #000;
+    background-color: #f6f6f6;
+    font-weight: bold;
+}
+
+
+/*------------------------------------------------------
+-- Footer
+------------------------------------------------------*/
+
+
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+	#foot-nav li{
+	list-style-type: none !important;
+	display: block !important;
+	margin:0;
+	padding:.5em;
+	}
+
+	.first {
+	text-align: left;
+	}
+
+	.last {
+	text-align: left;
+	}
+	ul.nav.nav-pills li{
+	display: block !important;
+	font-size: 1.6em;
+	text-align: left;
+	margin-bottom: 10px;
+	}
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px){
+
+	#foot-nav li{
+	list-style-type: none !important;
+	display: inline !important;
+	margin:0;
+	padding:.5em;
+	}
+
+
+	ul.nav.nav-pills li{
+	position: relative;
+	top: 5px;
+	}
+
+	.first {
+	text-align: left;
+	padding: 8px 0 8px 0;
+	margin: 2px 0 2px 0;
+	}
+
+	.last {
+	float: right;
+	padding: 8px 0 8px 0;
+	margin: 2px 0 2px 0;
+	text-align: right;
+	}
+
+}
+
+
