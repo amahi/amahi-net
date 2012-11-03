@@ -1,0 +1,22 @@
+{% include header.html %}
+
+
+{{ content }}
+
+          </div><!-- /hero unit -->
+	 </div><!-- /span9 -->
+        <div class="span3 lowered">
+          <div class="well sidebar-nav">
+            <ul class="nav nav-tabs nav-stacked">
+		  {% assign pages_list = site.pages %}
+		  {% assign group = 'navigation' %}
+		  {% include pages_list %}	
+	    </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+          
+         
+        
+      </div><!--/row-->
+
+{% include footer.html %}
