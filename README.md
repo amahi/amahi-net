@@ -7,4 +7,6 @@ Amahi.net is the default domain used in Amahi Home Server installations. If ther
 
 This is a small site dedicated providing useful tips and troubleshooting links.
 
+[![Build Status](https://secure.travis-ci.org/amahi/amahi-net.png)](http://travis-ci.org/amahi/amahi-net)
+
 (C) 2012, Amahi
