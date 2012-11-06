@@ -949,8 +949,13 @@
   .nav-collapse .nav > li > a {
     margin-bottom: 2px;
   }
-  .nav-collapse .nav > .divider-vertical {
+
+/*---commented out to show less nav options 
+-----in all views-------------------------*/
+/*  .nav-collapse .nav > .divider-vertical {
     display: none;
+*/
+
   }
   .nav-collapse .nav .nav-header {
     color: #777777;

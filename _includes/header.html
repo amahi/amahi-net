@@ -47,9 +47,12 @@
           <div class="nav-collapse collapse pull-right">
             <ul class="nav">
 
-             <li><a href="http://amahi.org">Amahi</a></li>
-              <li><a href="support.html">Support</a></li>
+              <li><a href="http://amahi.org">Amahi</a></li>
+              <li><a href="http://wiki.amahi.org/">Wiki</a></li>
+ 	      <li><a href="http://blog.amahi.org/">Blog</a></li>
+	      <li><a href="http://forums.amahi.org/">Forums</a></li>
               <li><a href="http://amahi.org/users">Control Panel</a></li>
+	      <li><a href="http://bugs.amahi.org/">Bug Tracker</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div><!--/container-fluid -->
@@ -63,6 +66,14 @@
 
 
       <div class="row-fluid">
-
+	<div class="span3 lowered">
+          <div class="new-side-nav">
+            <ul class="nav nav-tabs nav-stacked">
+		  {% assign pages_list = site.pages %}
+		  {% assign group = 'navigation' %}
+		  {% include pages_list %}	
+	    </ul>
+         </div><!--/new-side-nav --> 
+        </div><!--/span-->
         <div class="span9 lowered">
           <div class="hero-unit ">
