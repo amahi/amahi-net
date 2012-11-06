@@ -44,6 +44,15 @@
           box-shadow: none;
 }
 
+a.btn.btn-navbar {
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+  -webkit-border-radius: 0px;
+     -moz-border-radius: 0px;
+          border-radius: 0px;
+}
+
 
 
 /*------------------------------------------------------
@@ -110,7 +119,7 @@
 .new-side-nav li a {
     color:#fff;
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     padding-left:30px !important;
 
 }
