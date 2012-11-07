@@ -88,6 +88,22 @@ a.btn.btn-navbar {
   border-left: 1px solid #f5f5f5;
 }
 
+.acdn-p {
+    margin-bottom: 0px;
+    font-style: italic;
+    text-decoration:none;
+}
+
+
+
+a.accordian-toggle:hover {
+    text-decoration:none !important;
+}
+
+.accordian-group {
+/*changed in bootstrap.css*/
+}
+
 
 /*------------------------------------------------------
 -- Sidebar
