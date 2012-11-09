@@ -4,4 +4,6 @@ all:
 	@echo "Now: open _site/index.html"
 
 publish: all
-	git checkout gh-pages && git pull && git merge master && git push && git checkout master
+	rsync -av _site/ site.amahi.net:amahi.net-main/html/
+
+
