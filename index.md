@@ -1,6 +1,6 @@
 ---
 layout: homepage
-title: Amahi.net
+title: Home
 weight: 1
 ---
 ‎This the internet home of Amahi.net.
