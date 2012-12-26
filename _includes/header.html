@@ -14,6 +14,9 @@
 
     <style type="text/css">
       body {
+        max-width: 960px;
+        margin-left: auto;
+        margin-right: auto;
         padding-top: 40px;
         padding-bottom: 40px;
       }
@@ -37,46 +40,34 @@
 
   <body>
 
-    <div class="navbar navbar-fixed-top">
+    <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
-        <div class="container-fluid">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <div class="container-fluid inner">
+          <!--<a class="btn btn-navbar" data-toggle="collap" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-          </a>
+          </a> -->
           <!-- <a class="brand" href="#">Project name</a> -->
-	  <a class="logo" href="/"><img style="height: 38px;"src="static/images/amahi-logo-black.png"></a>
-          <div class="nav-collapse collapse pull-right">
+	  <a class="logo" href="/"><img style="height: 38px;"src="static/images/amahi-logo-btstrp-size.png"></a>
+          <div class="pull-right">
             <ul class="nav">
+      {% assign pages_list = site.pages %}
+      {% assign group = 'navigation' %}
+      {% include pages_list %} 
+              <li><a  href="#" id="AINT" rel="popover" data-html="true" data-placement="bottom" data-content="<p>Hoping this will be a modal.  Inside the modal will be html and JS that will direct user to the correct troubleshooter: Ubuntu vs. Fedora and Interavtive vs. print.</p>" title="AINT setup HTML Here">Interactive Troubleshooter</a>
+              </li>
 
-              <li><a href="http://amahi.org">Amahi</a></li>
-              <li><a href="http://wiki.amahi.org/">Wiki</a></li>
- 	      <li><a href="http://blog.amahi.org/">Blog</a></li>
-	      <li><a href="http://forums.amahi.org/">Forums</a></li>
-              <li><a href="http://amahi.org/users">Control Panel</a></li>
-	      <li><a href="http://bugs.amahi.org/">Bug Tracker</a></li>
             </ul>
-          </div><!--/.nav-collapse -->
+
+            </div>
+          </div><!--/.pull-right -->
         </div><!--/container-fluid -->
       </div><!--/navbar-inner -->
     </div><!--/navbar -->
 
-    <div class="container-fluid bg">
-     <div class="row-fluid">
+     <!-- <div class="row-fluid">
 	<div id="site-title"><h1>Amahi.net</h1></div>
-     </div>
+     </div> -->
 
-
-      <div class="row-fluid">
-	<div class="span3 lowered">
-          <div class="new-side-nav">
-            <ul class="nav nav-tabs nav-stacked">
-		  {% assign pages_list = site.pages %}
-		  {% assign group = 'navigation' %}
-		  {% include pages_list %}	
-	    </ul>
-         </div><!--/new-side-nav --> 
-        </div><!--/span-->
-        <div class="span9 lowered">
-          <div class="hero-unit ">
+    

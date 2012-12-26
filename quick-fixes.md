@@ -1,9 +1,9 @@
 ---
-layout: homepage
-title: Troubleshooting
+layout: page
+title: Quick-Fixes
 weight: 3
 ---
-## Troubleshooting
+## Quick-Fixes
 ------------------
 
 ### 1. Cannot Login
@@ -19,4 +19,3 @@ A common issue is your client computer not being able to connect to `http://hda`
 > * To ensure that the client(s) use your HDA for DNS, the simplest way is to disable DHCP in your network and reboot your clients. This will allow your HDA to be the sole DHCP server in it and everything should "just work."
 
 If you continue having networking issues, try the [Interactive Network Troubleshooter](http://wiki.amahi.org/index.php/Network_troubleshooting). Come by the [irc channel](http://talk.amahi.org) with the data for more help.
-
