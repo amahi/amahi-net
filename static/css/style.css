@@ -30,6 +30,7 @@
 	margin-right: auto !important;
 	margin-left: auto !important;
 	width: 77.7%;
+	text-align: center;
 }
 
 /*------------------------------------------------------
@@ -94,6 +95,16 @@
 
 }
 
+/*------------------------------------------------------
+-- Images
+------------------------------------------------------*/
+.img-inter:hover {
+	background-color: rgba(0,0,0,.2)
+}
+
+.img-inter:active{
+	background-color: rgba(0,0,0, .8)
+}
 
 /*------------------------------------------------------
 -- Sidebar
@@ -232,4 +243,40 @@ footer {
 
 }
 
+
+
+pre {
+    font-family: 'Ubuntu Mono', mono; 
+    font-size: 1em;
+    text-rendering: optimizelegibility;
+}
+
+.icon-ok {
+    color: #48b94a;
+    font-size: 1.22em;
+    font-weight: bold;
+}
+
+.icon-flag {
+    color: #b94a48;
+    font-size: 1.22em;
+    font-weight: bold;
+}
+
+.highlight {
+    background-color: #ffe706;
+}
+
+/*#step-column {
+    padding-top: 19px;
+}*/
+
+#progress {
+    color: #333 !important;
+    
+}
+
+.well {
+    margin-top: 15px;
+}
 
