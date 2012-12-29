@@ -17,7 +17,7 @@
         max-width: 960px;
         margin-left: auto;
         margin-right: auto;
-        padding-top: 40px;
+        padding-top: 50px;
         padding-bottom: 40px;
       }
       .sidebar-nav {
@@ -72,21 +72,10 @@
         <h3>Interactive Troubleshooter</h3>
       </div>
       <div class="modal-body">
-        <p id="on-off-line">You will need internet access for the Interactive Troubleshooter, but we have a print version if you need it.  Which would you like?</p>
-        <div class="row-fluid">
-          <div class="span2" > </div>
-          <div class="span3" >
-            <a class="btn btn-success centered" id="interactive-btn"  style="width:80%"><i class='icon-signal'></i> Interactive</a>
-          </div>
-          <div class="span2" > </div>
-          <div class="span3" >
-             <a class="btn btn-inverse centered" id="print-btn" style="width:80%"><i class='icon-file'></i> Print</a>
-          </div>
-          <div class="span2" > </div>
-          </div>
+          <br>
+          <p id="distro" class="centered">Amahi supports both Ubuntu and Fedora.</p><p class="centered"><em>Which Distro is on your HDA?</em></p>
           <br>
           <br>
-          <p id="distro">Amahi supports both Ubuntu and Fedora.  Which Distro is on your HDA?</p>
           <div class="row-fluid">
             <div class="span2" > </div>
             <div class="span3" >
@@ -119,11 +108,15 @@
             <div class = "" id="selected-distro" style="display:none">
               <h4><em> Great! Do you want the interactive version or the print version?</em></h4>
             </div>
-            <div class = "" id="ready">
-            </div>
+
             <div class="row-fluid">
               <div id ="go-btn" style="display:none" >
-                <a id="go-btn-a" href="#" class="span3 offset9 btn btn-success pull-right" >Let's Get Started!</a>
+                <hr>
+                <span id="ready"></span>
+                <div class="span1"></div>
+                <div class="span2">
+                  <a id="go-btn-a" href="#" class= "btn btn-success pull-right" title="Lets Get Started!" ><i class="icon-arrow-right"></i></a>
+                </div>
               </div>
           </div>
           </div>

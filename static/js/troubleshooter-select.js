@@ -4,7 +4,7 @@
 
 // Variables
 distro = "0"  //Ubuntu or Fedora
-version = "0"  //interactive or print
+version = "interactive"  //interactive or print
 aintUrl = ""  //
 
 /*------------------------------------------
@@ -15,12 +15,21 @@ ubuntu-btn
 fedora-btn
 go-btn
 -------------------------------------------*/
+	// Reset Variables on modal exit
+	 $('#aintModal').on('hidden', function () {
+    	location.reload()
+    })
+
 	//Choosing a url
 	var selectUrl = function() {
-		if (distro == 'Ubuntu' && version == 'print') {
-			aintUrl = "./support.html"
+		if (distro == 'Fedora' && version == 'interactive') {
+			aintUrl = "./fedorainteractive.html"
 		} else if (distro == "Ubuntu" && version == 'interactive') {
-			aintUrl = "./quick-fixes.html"
+			aintUrl = "./ubuntuinteractive.html"
+		}else if (distro == "Ubuntu" && version == 'print') {
+			aintUrl = "./ubuntuprint.html"
+		}else if (distro == "Fedora" && version == 'print') {
+			aintUrl = "./fedoraprint.html"
 		};
 		console.log(aintUrl)
 	}
@@ -33,7 +42,7 @@ go-btn
 			$('#selected-distro').slideUp();
 			$('#selected-method').slideUp();
 			$('#go-btn').slideDown();	
-			$('#ready').append('<p id="appended" >You have chosen <span class="highlight">'+version+'</span> version of the <span class="highlight">'+distro+'</span> Troubleshooter.</p>');
+			$('#ready').append('<div id="appended"><div class="span2"><a class="btn pull-left" id="print-btn" title="Click me for the print version!" data-toggle="button" onClick="printBtn()";><i class="icon-print"></i></a></div><div class="span1"></div><div style="text-align:center !important" class="span6"><p>You have chosen <span class="italic">'+version+'</span> version of the <span class="italic">'+distro+'</span> Troubleshooter.</p></div></div>');
 			selectUrl ();
 			$('#go-btn-a').prop('href', aintUrl);
 			return true;	
@@ -64,6 +73,17 @@ go-btn
 
 		console.log(version)
 	})
+
+	var printBtn = function() {
+		if (version=='interactive'){
+			version = 'print';
+			methodSelected();
+			$('#print-btn').toggleClass('active')
+		} else if (version=='print') {
+			version = 'interactive';
+			methodSelected();
+		}
+	}
 
 	// Fedora vs. ubuntu
 	var distroSelected = function() {

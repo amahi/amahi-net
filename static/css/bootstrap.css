@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700');
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic|Ubuntu+Mono);
 /*!
  * Bootstrap v2.2.2
  *
@@ -4666,9 +4666,11 @@ a.badge:hover {
 .affix {
   position: fixed;
 }
+/*-- This has been changed/edited----------*/
 body {
-  font-weight: 300;
+  font-weight: 400;
 }
+
 h1 {
   font-size: 50px;
 }
