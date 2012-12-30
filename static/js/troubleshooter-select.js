@@ -45,6 +45,11 @@ go-btn
 			$('#ready').append('<div id="appended"><div class="span2"><a class="btn pull-left" id="print-btn" title="Click me for the print version!" data-toggle="button" onClick="printBtn()";><i class="icon-print"></i></a></div><div class="span1"></div><div style="text-align:center !important" class="span6"><p>You have chosen <span class="italic">'+version+'</span> version of the <span class="italic">'+distro+'</span> Troubleshooter.</p></div></div>');
 			selectUrl ();
 			$('#go-btn-a').prop('href', aintUrl);
+			if (version =='print') {
+					$('#print-btn').addClass('active')
+				} else {
+					$('#print-btn').removeClass('active')
+				};
 			return true;	
 		} else {
 
@@ -78,7 +83,6 @@ go-btn
 		if (version=='interactive'){
 			version = 'print';
 			methodSelected();
-			$('#print-btn').toggleClass('active')
 		} else if (version=='print') {
 			version = 'interactive';
 			methodSelected();

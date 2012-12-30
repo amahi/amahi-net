@@ -19,6 +19,19 @@ function begin() {
 };
 
 ///
+/// Print Functions
+///
+
+function printIt() {
+	var $showThese = $('#step-column').find('.hidden');
+	$showThese.removeClass('hidden');
+	$('#step4').toggleClass('hidden');
+	var $textInput = $('#step-column').find(':input[type=text]');
+	$textInput.toggleClass('hidden');
+	$('#insertPrint').append('<p><i class="icon-print btn" onClick="window.print()"></i> Now, Print this page.  If your answer is no to one of the steps, use the troubleshooting step that follows.</p>')
+}
+
+///
 ///Step One
 ///
 $('#ip-address').click(stepOne);
@@ -32,7 +45,7 @@ function stepOne() {
 
 	$('.amahiIP').append(amahiIp);
 
-     $('#solution-column').toggleClass('hidden');
+     //$('#solution-column').toggleClass('hidden');
 	$('#progress').toggleClass('hidden');
 	$('#insertHere').append("<p><i class='icon-ok'></i> Step 1: Your HDA IP address is <span class=\"highlight\"> " +ipAddress.value+ "</span></p>");
 	$('#step2').toggleClass('hidden');

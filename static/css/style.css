@@ -39,11 +39,15 @@
 	color: #B94A48 !important;
 }
 
+.text-info {
+	color:blue;
+}
+
 /*------------------------------------------------------
 -- Navbar
 ------------------------------------------------------*/
 @media (max-width: 979px){
-	.navbar-fixed-top {
+	.navbar-static-top {
 	    margin-bottom: 0px;
 	}
 }
@@ -57,6 +61,12 @@
 
 .inner {
 	max-width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.ts-inner {
+	max-width: 1200px;
 	margin-right: auto;
 	margin-left: auto;
 }

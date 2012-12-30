@@ -127,11 +127,16 @@ textarea {
   vertical-align: top;
 }
 @media print {
+  /*----------  edit/change to print style -----*/
+
   * {
     text-shadow: none !important;
     color: #000 !important;
     background: transparent !important;
     box-shadow: none !important;
+    font-size: 10px;
+    
+
   }
   a,
   a:visited {
@@ -177,6 +182,7 @@ textarea {
     page-break-after: avoid;
   }
 }
+
 .clearfix {
   *zoom: 1;
 }
@@ -3187,7 +3193,7 @@ input[type="submit"].btn.btn-mini {
   clear: both;
 }
 .navbar .container {
-  width: auto;
+  width: auto !important;
 }
 .nav-collapse.collapse {
   height: auto;
@@ -3323,7 +3329,8 @@ input[type="submit"].btn.btn-mini {
 .navbar-static-top .container,
 .navbar-fixed-top .container,
 .navbar-fixed-bottom .container {
-  width: 940px;
+  min-width: auto;
+  /*---- Changed this from 960px to auto ---*/
 }
 .navbar-fixed-top {
   top: 0;
