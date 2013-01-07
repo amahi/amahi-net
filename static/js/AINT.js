@@ -2,21 +2,10 @@
 ///Interactive Amahi Network Troubleshooter
 ///
 $("input[type='submit']").click(function() { return false; });
-///Welcome
-$(document).ready(function() {   	
-    $('#go-inter').click(begin); 
-});
-
 //Variables
 amahiIp = "";
 gatewayIp = "";
 amahiDomain = "";
-
-
-function begin() {
-    $('#welcome').collapse('hide');  	
-    $('#step1').toggleClass('hidden');
-};
 
 ///
 /// Print Functions
@@ -34,8 +23,11 @@ function printIt() {
 ///
 ///Step One
 ///
-$('#ip-address').click(stepOne);
 
+$('#ip-address').click(stepOne);
+///
+///Step One
+///
 function stepOne() {
     amahiIp = ipAddress.value;
     if ((ipAddress.value).length < 6 ) {
@@ -77,7 +69,7 @@ function stepTwo() {
 $('#gateway-id').on('click', function() {
     gatewayIp = gatewayIP.value;
     if ((gatewayIP.value).length < 6) {
-	$('#step3').append("<div class=\"alert alert-block\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\">×</button><span class=\"badge badge-important\">Important</span>  Please enter your IP of your router.</div>");	
+	$('#step3').append("<div class=\"alert alert-block\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\">×</button><span class=\"badge badge-important\">Important</span>  Please enter the IP of your router.</div>");	
     } else {
 	$('#step3').collapse('hide');
 	$('#insertHere').append("<p><i class='icon-ok'></i> Step 3: Your router IP address is <span class=\"highlight\"> " +gatewayIP.value+ "</span></p>");
