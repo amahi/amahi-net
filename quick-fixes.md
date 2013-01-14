@@ -18,4 +18,7 @@ A common issue is your client computer not being able to connect to `http://hda`
 > * This may be because your client device is not using your HDA for DNS.
 > * To ensure that the client(s) use your HDA for DNS, the simplest way is to disable DHCP in your network and reboot your clients. This will allow your HDA to be the sole DHCP server in it and everything should "just work."
 
-If you continue having networking issues, try the [Interactive Network Troubleshooter](http://wiki.amahi.org/index.php/Network_troubleshooting). Come by the [irc channel](http://talk.amahi.org) with the data for more help.
+If you continue having networking issues, try the 
+<a  href="#" id="modalTrigger" data-target="#aintModal" role="button" data-toggle="modal" title="Start the Interactive Troubleshooter">Interactive Troubleshooter</a> above.
+
+Check the [support options](support.html) for more help.

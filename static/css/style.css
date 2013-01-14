@@ -290,4 +290,6 @@ hr {
 .well {
     margin-top: 15px;
 }
-
+ 
+.copyright { font-weight: lighter; font-size: 80%; color: #aaa; }
+.spacer { margin: 2em .5em; }
