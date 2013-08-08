@@ -34,8 +34,7 @@ function stepOne() {
 	$('#step1').append("<div class=\"alert alert-block\" ><button type=\"button\" class=\"close\" data-dismiss=\"alert\">×</button><span class=\"badge badge-important\">Important</span>  Please enter the IP Address in the form of x.x.x.x (ex.  192.168.1.10).</div>");	
     } else {
 	$('#step1').collapse('hide');
-
-	$('.amahiIP').append(amahiIp);
+  $('.amahiIP').append(amahiIp);
 
      //$('#solution-column').toggleClass('hidden');
 	$('#progress').toggleClass('hidden');

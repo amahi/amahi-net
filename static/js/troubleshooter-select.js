@@ -113,6 +113,3 @@ go-btn
 
 
 	// Choose a url and inject it into the go button
-
-
-

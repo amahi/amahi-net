@@ -63,12 +63,14 @@
 	max-width: 960px;
 	margin-right: auto;
 	margin-left: auto;
+  padding: 0 10px;
 }
 
 .ts-inner {
 	max-width: 1200px;
 	margin-right: auto;
 	margin-left: auto;
+  padding: 0 10px;
 }
 
 /*------------------------------------------------------
