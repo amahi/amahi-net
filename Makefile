@@ -1,6 +1,6 @@
 
 all:
-	jekyll --pygments --safe
+	jekyll 
 	@echo "Now: open _site/index.html"
 
 publish: all

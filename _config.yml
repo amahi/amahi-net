@@ -1,2 +1,2 @@
 pygments: true
-exclude: Gemfile
+exclude: [Gemfile]
