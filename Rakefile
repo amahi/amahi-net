@@ -4,7 +4,7 @@ require 'bundler'
 desc "install the bundle"
 task :bundle do
 	sh('bundle install')
-	sh('jekyll build')
+	sh('jekyll --pygments --safe')
 end
 
 task(:default).clear

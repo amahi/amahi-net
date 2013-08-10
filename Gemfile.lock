@@ -1,5 +1,5 @@
-Gem
-  remote: http://rubygems.org
+GEM
+  remote: http://rubygems.org/
   specs:
     RedCloth (4.2.9)
     albino (1.3.3)
