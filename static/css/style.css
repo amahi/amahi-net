@@ -319,10 +319,16 @@ footer > .nav > li > a {
 ------------------------------------------------------*/
 #ts-select-1 {
   margin: 0 auto 40px auto;
-  width: 66%;
+  width: 75%;
 }
 
 #ts-select-2 {
   width: 50%;
   margin: -20px auto 40px auto;
+}
+
+.amahi-font {
+  font-family: arial, helvetica, sans-serif;
+  font-weight: bold;
+  text-rendering: optimizelegibility;
 }

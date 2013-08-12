@@ -22,14 +22,14 @@ go-btn
 
 	//Choosing a url
 	var selectUrl = function() {
-		if (distro == 'Fedora' && version == 'interactive') {
-			aintUrl = "./fedorainteractive.html"
-		} else if (distro == "Ubuntu" && version == 'interactive') {
-			aintUrl = "./ubuntuinteractive.html"
-		}else if (distro == "Ubuntu" && version == 'print') {
-			aintUrl = "./ubuntuprint.html"
-		}else if (distro == "Fedora" && version == 'print') {
-			aintUrl = "./fedoraprint.html"
+		if (distro == 'Amahi 7' && version == 'interactive') {
+			aintUrl = "./amahi7interactive.html"
+		} else if (distro == "Amahi 6" && version == 'interactive') {
+			aintUrl = "./amahi6interactive.html"
+		}else if (distro == "Amahi 6" && version == 'print') {
+			aintUrl = "./amahi6print.html"
+		}else if (distro == "Amahi 7" && version == 'print') {
+			aintUrl = "./amahi7print.html"
 		};
 		console.log(aintUrl)
 	}
@@ -97,13 +97,13 @@ go-btn
 	}
 
 	$('#ubuntu-btn').click(function(){  
-		distro = 'Ubuntu';
+		distro = 'Amahi 6';
 		distroSelected();
 		console.log(distro)
 	})
 
 	$('#fedora-btn').click(function(){		
-		distro = 'Fedora';
+		distro = 'Amahi 7';
 		distroSelected();
 		console.log(distro)
 	})
