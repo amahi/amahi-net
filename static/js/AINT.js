@@ -21,10 +21,23 @@ function printIt() {
 }
 
 ///
+///Set Focus on The first Input
+///
+$(document).ready(function() {
+  $('#ipAddress').focus();
+});
+
+///
 ///Step One
 ///
 
 $('#ip-address').click(stepOne);
+$('#ipAddress').keypress(function(e) {
+    if(e.which == 13) {
+        jQuery(this).blur();
+        jQuery('#ip-address').focus().click();
+    }
+});
 ///
 ///Step One
 ///
@@ -40,6 +53,7 @@ function stepOne() {
 	$('#progress').toggleClass('hidden');
 	$('#insertHere').append("<p><i class='icon-ok'></i> Step 1: Your HDA IP address is <span class=\"highlight\"> " +ipAddress.value+ "</span></p>");
 	$('#step2').toggleClass('hidden');
+  $('#domain').focus();
     }
 };
 
@@ -47,6 +61,12 @@ function stepOne() {
 ///Step 2
 ///
 $('#domain-id').click(stepTwo);
+$('#domain').keypress(function(e) {
+    if(e.which == 13) {
+        jQuery(this).blur();
+        jQuery('#domain-id').focus().click();
+    }
+});
 
 function stepTwo() {
     amahiDomain = domain.value;
@@ -58,6 +78,7 @@ function stepTwo() {
 
 	$('.amdom').append(amahiDomain);
 	$('#step3').toggleClass('hidden');
+  $('#gatewayIP').focus();
     };
 
 };
@@ -65,7 +86,15 @@ function stepTwo() {
 ///
 ///Step 3
 ///  
-$('#gateway-id').on('click', function() {
+$('#gateway-id').click(stepThree);
+$('#gatewayIP').keypress(function(e) {
+    if(e.which == 13) {
+        jQuery(this).blur();
+        jQuery('#gateway-id').focus().click();
+    }
+});
+
+function stepThree() {
     gatewayIp = gatewayIP.value;
     if ((gatewayIP.value).length < 6) {
 	$('#step3').append("<div class=\"alert alert-block\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\">×</button><span class=\"badge badge-important\">Important</span>  Please enter the IP of your router.</div>");	
@@ -73,10 +102,10 @@ $('#gateway-id').on('click', function() {
 	$('#step3').collapse('hide');
 	$('#insertHere').append("<p><i class='icon-ok'></i> Step 3: Your router IP address is <span class=\"highlight\"> " +gatewayIP.value+ "</span></p>");
 	$('#step4').toggleClass('hidden');
-	
-	
-    };
-});
+  };
+
+};
+
 
 
 ///Makes Bootstrap Radio Groups Behave like radio buttons, almost
