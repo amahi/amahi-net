@@ -80,7 +80,7 @@ go-btn
 	})
 
 	var printBtn = function() {
-		if (version=='interactive'){
+		if (version =='interactive'){
 			version = 'print';
 			methodSelected();
 		} else if (version=='print') {

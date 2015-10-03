@@ -1,0 +1,21 @@
+<div class="btn-toolbar pull-right">
+	<div class="btn-group">
+		<button class="btn dropdown-toggle btn-primary" data-toggle="dropdown">
+			<span id="main-btn" >Amahi 8 Interactive </span>
+			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+			<li><a href="#" rel="nofollow" onclick="SetDistro(8)">Amahi 8</a></li>              
+			<li><a href="#" rel="nofollow" onclick="SetDistro(7)">Amahi 7</a></li>
+			<li><a href="#" rel="nofollow" onclick="SetDistro(6)">Amahi 6 (Ubuntu)</a></li>
+		</ul>
+	</div>
+	
+	<a class="btn" id="print-btn" onclick="PrintClick()" title="Click me for the print version!" data-toggle="button">
+		<i class="icon-print"></i> Printable Version
+	</a>
+</div>
+
+<script>
+	GetState(SetButtonState);
+</script>
