@@ -17,14 +17,14 @@ function MakeUrl(isPrint) {
 function MakeText(  isPrint ) {
 	var amahi = "Amahi";
 	var version = "Interactive";
+	var text = "<h3>Would you like to go to the</h3>";
 	
 	var url = document.URL.toLowerCase();
 	if( isPrint ) {
 		version = 'Print';
+		text += "<h3>" + version + " version of the</h3>";
 	}
 	
-	var text = "<h3>Would you like to go to the</h3>";
-	text += "<h3>" + version + " version of the</h3>";
 	text += "<h3>" + amahi + " " + distro + " troubleshooter?</h3>";
 	
 	return text;	
@@ -50,12 +50,14 @@ function ShowModal(isPrint) {
 function SetButtonState( version ){
 	var amahi = "Amahi";
 	
-	var text = amahi + " " + distro + " " + version;
-	$('#main-btn').html(text);
+	var text = amahi + " " + distro;
 	
 	if(version.toLowerCase() === "print") {
+		text += " " + version
 		$('#print-btn').addClass('active');
 	}
+	
+	$('#main-btn').html(text);
 }
 
 function PrintClick() {
